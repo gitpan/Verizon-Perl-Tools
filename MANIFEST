@@ -1,0 +1,14 @@
+Changes
+lib/Verizon/Cloud/Compute.pm
+lib/Verizon/Cloud/Storage.pm
+lib/Verizon/Cloud/Ecloud.pm
+bin/ecloud.pl
+bin/vcc.pl
+bin/vcs.pl
+Makefile.PL
+MANIFEST			
+README
+t/00-load.t
+t/manifest.t
+t/pod-coverage.t
+t/pod.t
