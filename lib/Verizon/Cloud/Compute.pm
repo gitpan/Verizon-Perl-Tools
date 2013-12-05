@@ -1,54 +1,50 @@
 
 package Verizon::Cloud::Compute;
 
-use 5.006;
 use strict;
 use warnings FATAL => 'all';
+use Carp;
+
+require Exporter;
+
+our @ISA = qw(Exporter);
+our @EXPORT_OK = qw(get_vms); 
+our @EXPORT = qw();
+
 
 =head1 NAME
 
-Verizon::Cloud::Compute - The great new Verizon::Cloud::Compute!
+Verizon::Cloud::Compute - Perl interface to the Verizon Cloud Compute Platform
 
 =head1 VERSION
 
-Version 0.01
+Version 0.01.04
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.01.04';
 
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
+Perl inteface to the Verizon Cloud Compute Platform. Sample usage:
 
     use Verizon::Cloud::Compute;
-
-    my $foo = Verizon::Cloud::Compute->new();
     ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 get_vms
+
+Placeholder function for now
 
 =cut
 
-sub function1 {
+sub get_vms {
+    return 1;
 }
 
-=head2 function2
 
-=cut
-
-sub function2 {
-}
 
 =head1 AUTHOR
 

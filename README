@@ -1,3 +1,4 @@
+
 Verizon Perl Tools
 
 Verizon Perl Tools is a collection of Perl modules which provides a
@@ -21,7 +22,13 @@ To install this module, run the following commands:
 	make test
 	make install
 
+or use CPAN:
 
+       cpan> install Verizon::Perl::Tools
+
+USAGE
+
+  
 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the

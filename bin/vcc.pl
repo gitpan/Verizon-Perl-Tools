@@ -1,9 +1,12 @@
 #!/usr/bin/perl -w
 
 ## Command line script to illustrate the use of the API and to 
-## provide a convenience tool for system administrators
+## provide a convenient tool for system administrators
 
 use strict;
 use Carp;
 
-print "Hello vcc!\n";
+use Verizon::Cloud::Compute qw(get_vms);
+
+print get_vms;
+

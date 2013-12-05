@@ -7,7 +7,7 @@ WriteMakefile(
     NAME             => 'Verizon',
     DISTNAME         => 'Verizon-Perl-Tools',
     AUTHOR           => q{Jason Goth <jason@gothtx.com>},
-    VERSION          => '0.1_01',
+    VERSION          => '0.1.04',
     EXE_FILES        => ['bin/ecloud.pl','bin/vcc.pl', 'bin/vcs.pl' ],
     ABSTRACT         => 'Perl Modules for using Verizon Cloud offerings',
     LICENSE          => 'MIT',

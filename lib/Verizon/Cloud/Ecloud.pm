@@ -1,66 +1,55 @@
 
 package Verizon::Cloud::Ecloud;
 
-use 5.006;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
+use Carp;
+
+require Exporter;
+
+our @ISA = qw(Exporter);
+our @EXPORT_OK = qw(get_organizations); 
+our @EXPORT = qw();
 
 =head1 NAME
 
-Verizon::Cloud::Ecloud - The great new Verizon::Cloud::Ecloud!
+Verizon::Cloud::Ecloud - Perl interface to the Verizon Enterprise Cloud platform
 
 =head1 VERSION
 
-Version 0.01
+Version 0.01.04
 
 =cut
 
-our $VERSION = '0.01';
-
+our $VERSION = '0.01.04';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
-
-    use Verizon::Cloud::Ecloud;
-
-    my $foo = Verizon::Cloud::Ecloud->new();
-    ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+Provides a simple perl interface to the Verizon Enterprise Cloud.  For details on the Verizon 
+Enterprise Cloud, see http://support.theenterprisecloud.com.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 get_organizations
+
+Provides a list of organzations the user has access to. Returns a hash of environment ids and names.
+
+    use Verizon::Cloud::Ecloud qw(get_organizations);
+
+    my %orgs = get_organizations();
+
+    # %org = ( '1234567' => 'Sample Organization' )
 
 =cut
 
-sub function1 {
+sub get_organizations {
+    return ('1234567' => 'Sample Organization',);
 }
 
-=head2 function2
-
-=cut
-
-sub function2 {
-}
 
 =head1 AUTHOR
 
 Jason Goth, C<< <jason at gothtx.com> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-verizon-cloud-ecloud at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Verizon-Cloud-Ecloud>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
 
 
 =head1 SUPPORT
@@ -68,9 +57,6 @@ automatically be notified of progress on your bug as I make changes.
 You can find documentation for this module with the perldoc command.
 
     perldoc Verizon::Cloud::Ecloud
-
-
-You can also look for information at:
 
 =over 4
 

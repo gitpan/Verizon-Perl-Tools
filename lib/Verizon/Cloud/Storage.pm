@@ -1,53 +1,47 @@
 package Verizon::Cloud::Storage;
 
-use 5.006;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
+use Carp;
+
+require Exporter;
+
+our @ISA = qw(Exporter);
+our @EXPORT_OK = qw(get_buckets); 
+our @EXPORT = qw();
 
 =head1 NAME
 
-Verizon::Cloud::Storage - The great new Verizon::Cloud::Storage!
+Verizon::Cloud::Storage - Perl Interface to the Verizon Cloud Storage Platform.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.01.04
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.01.04';
 
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
+Perl Inteface to the Verizon Cloud Storage Platform.  Sample usage:
 
     use Verizon::Cloud::Storage;
-
-    my $foo = Verizon::Cloud::Storage->new();
     ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 get_buckets
+
+Placeholder function for now
 
 =cut
 
-sub function1 {
+sub get_buckets {
+    return 1;
 }
 
-=head2 function2
-
-=cut
-
-sub function2 {
-}
 
 =head1 AUTHOR
 
